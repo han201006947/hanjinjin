@@ -84,7 +84,7 @@ public class MemberController {
 			return "0";// 登录失败，用户名或密码不正确,修改一下
 		}
 
-		// 将用户(数据库查到的)放进session中
+		// 将用户(数据库查到的)放进session中2
 		session.setAttribute("member", memberDB);
 
 		// 判断信息是否完善
