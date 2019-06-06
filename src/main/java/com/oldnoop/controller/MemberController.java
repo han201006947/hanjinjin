@@ -80,7 +80,7 @@ public class MemberController {
 	@ResponseBody
 	public String login(MemberAccount ma, HttpSession session) {
 		Member memberDB = memberService.login(ma);
-		if (memberDB == null) {
+		if(memberDB == null){
 			return "0";// 登录失败，用户名或密码不正确
 		}
 
