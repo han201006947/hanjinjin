@@ -81,7 +81,7 @@ public class MemberController {
 	public String login(MemberAccount ma, HttpSession session) {
 		Member memberDB = memberService.login(ma);
 		if(memberDB == null){
-			return "0";// 登录失败，用户名或密码不正确
+			return "0";// 登录失败，用户名或密码不正确,修改一下
 		}
 
 		// 将用户(数据库查到的)放进session中
